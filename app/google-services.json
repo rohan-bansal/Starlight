@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "604972343262",
+    "firebase_url": "https://chattranslator-2be96.firebaseio.com",
+    "project_id": "chattranslator-2be96",
+    "storage_bucket": "chattranslator-2be96.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:604972343262:android:6fcea6a4329faeca",
+        "android_client_info": {
+          "package_name": "com.rohan.chattranslator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "604972343262-n2qu19n7pl3grehdpqdeptlfff42otfk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rohan.chattranslator",
+            "certificate_hash": "37c07b28d6e1cd572f34e1c1b32a1168c76a577a"
+          }
+        },
+        {
+          "client_id": "604972343262-ml1obn2bv2r94v7pftl54kdth8uv76da.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYxpuys9nIP6SbKMquY03mXmSBMyu64vA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "604972343262-ml1obn2bv2r94v7pftl54kdth8uv76da.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
