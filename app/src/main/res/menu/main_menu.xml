@@ -7,4 +7,41 @@
     <item android:title="Sign out" app:showAsAction="never"
         android:id="@+id/menu_sign_out"/>
 
+    <item android:title="Language" app:showAsAction="never"
+        android:id="@+id/language">
+        <menu>
+            <item
+                android:id="@+id/English"
+                android:title="English"/>
+            <item
+                android:id="@+id/Spanish"
+                android:title="Spanish" />
+            <item
+                android:id="@+id/French"
+                android:title="French"/>
+            <item
+                android:id="@+id/Hindi"
+                android:title="Hindi"/>
+            <item
+                android:id="@+id/Mandarin"
+                android:title="Mandarin"/>
+            <item
+                android:id="@+id/German"
+                android:title="German"/>
+            <item
+                android:id="@+id/Japanese"
+                android:title="Japanese"/>
+            <item
+                android:id="@+id/Arabic"
+                android:title="Arabic"/>
+            <item
+                android:id="@+id/Bengali"
+                android:title="Bengali"/>
+            <item
+                android:id="@+id/Russian"
+                android:title="Russian"/>
+        </menu>
+    </item>
+
+
 </menu>

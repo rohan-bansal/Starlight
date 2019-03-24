@@ -19,23 +19,26 @@ import com.firebase.ui.database.FirebaseListAdapter;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.FirebaseApp;
-import com.google.firebase.analytics.FirebaseAnalytics;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.cloud.translate.Translate;
+import com.google.cloud.translate.TranslateOptions;
 
 public class MainActivity extends AppCompatActivity {
 
-    private FirebaseAuth mAuth;
-    private FirebaseAnalytics mFirebaseAnalytics;
     public static int SIGN_IN_REQUEST_CODE = 10;
     private FirebaseListAdapter<ChatMessage> adapter;
+    Translate translate;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         FirebaseApp.initializeApp(this);
+
+        //translate = TranslateOptions.getDefaultInstance().getService();
+
 
         if(FirebaseAuth.getInstance().getCurrentUser() == null) {
             startActivityForResult(
@@ -121,6 +124,8 @@ public class MainActivity extends AppCompatActivity {
                             finish();
                         }
                     });
+        } else if(item.getItemId() == R.id.language) {
+            Toast.makeText(MainActivity.this, "I am here", Toast.LENGTH_LONG).show();
         }
         return true;
     }
