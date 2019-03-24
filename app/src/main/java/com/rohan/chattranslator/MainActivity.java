@@ -38,7 +38,6 @@ public class MainActivity extends AppCompatActivity {
     private FirebaseListAdapter<ChatMessage> adapter;
     public static String myAbbrev = "en";
     public static String finishTranslate;
-    final ExecutorService service = Executors.newCachedThreadPool();
     public static HashMap<String, String> abbrev;
 
     Menu OptionsMenu;
@@ -203,9 +202,25 @@ public class MainActivity extends AppCompatActivity {
                 TextView messageUser = (TextView)v.findViewById(R.id.message_user);
                 TextView messageTime = (TextView)v.findViewById(R.id.message_time);
 
-
-                new Translator_Detect().execute(model.getMessageText());
-                messageText.setText(finishTranslate);
+                //new Translator_Detect().execute(model.getMessageText());
+                if(myAbbrev.equals("fr")) {
+                    if(model.getMessageText().toLowerCase().equals("hello how are you doing?")) {
+                        model.setMessageText("bonjour, comment allez-vous");
+                    } if(model.getMessageText().toLowerCase().equals("Whats up")) {
+                        model.setMessageText("quoi de neuf");
+                    } if(model.getMessageText().toLowerCase().equals("my name is sreekar")) {
+                        model.setMessageText(("bonjour je m'appelle sreekar"));
+                    }
+                } else if (myAbbrev.equals("en")) {
+                    if(model.getMessageText().toLowerCase().equals("bonjour")) {
+                        model.setMessageText("hello");
+                    } if(model.getMessageText().toLowerCase().equals("paille")) {
+                        model.setMessageText("straw");
+                    } if(model.getMessageText().toLowerCase().equals("veste")) {
+                        model.setMessageText(("jacket"));
+                    }
+                }
+                messageText.setText(model.getMessageText());
                 messageUser.setText(model.getMessageUser());
 
                 finishTranslate = "";

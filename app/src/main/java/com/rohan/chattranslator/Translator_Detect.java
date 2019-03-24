@@ -1,6 +1,7 @@
 package com.rohan.chattranslator;
 
 import android.os.AsyncTask;
+import android.widget.TextView;
 
 import com.google.cloud.translate.Detection;
 import com.google.cloud.translate.Translate;
