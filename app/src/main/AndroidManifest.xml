@@ -19,6 +19,8 @@
             </intent-filter>
         </activity>
 
+        <meta-data android:value="AIzaSyBcrnzwxGSEF7x1rU7Op0SbxNQw8oz6PqM" android:name="api_key"></meta-data>
+
     </application>
 
 </manifest>
