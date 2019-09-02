@@ -2,6 +2,7 @@
 
 Change the world, one message at a time.
 
+Los Altos Hacks V submission.
 
 ## Features
 
