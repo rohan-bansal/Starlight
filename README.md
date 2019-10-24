@@ -1,4 +1,4 @@
-# ChatTranslator
+# Starlight Translator
 
 Change the world, one message at a time.
 
